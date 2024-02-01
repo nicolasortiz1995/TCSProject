@@ -120,5 +120,4 @@ public class MainPageTest {
         driver.switchTo().alert().accept();
         Assert.assertTrue(driver.getPageSource().contains("You entered "+prop.getProperty("TC7Assert")));
     }
-
 }
