@@ -40,6 +40,6 @@ Las pruebas se realizan desde la clase principal "MainPageTest.java".
 
 Se utilizó la librería de TestNG incluida para realizar reportes. La ruta donde se guarda automáticamente es "..\build\reports\tests\test\index.html".
 
-#Documentación
+## Documentación
 
 Se creó la carpeta "docs", la cual contiene los casos de prueba aplicados en la automatización.
