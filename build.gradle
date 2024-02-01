@@ -1,0 +1,32 @@
+plugins {
+  id 'java'
+}
+
+group 'com.tcsproject'
+version '1.0-SNAPSHOT'
+
+repositories {
+  mavenCentral()
+}
+
+sourceCompatibility = '16'
+targetCompatibility = '16'
+
+tasks.withType(JavaCompile) {
+  options.encoding = 'UTF-8'
+}
+
+dependencies {
+  testImplementation('org.seleniumhq.selenium:selenium-java:4.13.0')
+  testImplementation('org.testng:testng:7.7.1')
+  implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.11'
+}
+
+test {
+  useTestNG(){
+    useDefaultListeners = true
+  }
+  testLogging {
+    events "PASSED", "FAILED", "SKIPPED"
+  }
+}
